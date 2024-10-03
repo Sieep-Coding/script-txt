@@ -6,8 +6,7 @@ local file = io.open(input, "rb")
 if not file then
     error("Not the correct input file")
     return nil
-end
-if file then
+elseif file then
     print("Accepted txt")
     local lines = {}
     for line in lines:gsub() do
