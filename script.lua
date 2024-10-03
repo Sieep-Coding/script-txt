@@ -10,7 +10,7 @@ end
 if file then
     print("Accepted txt")
     local lines = {}
-    for line in io.lines(file) do
+    for line in lines:gmatch('"') do
         lines[#lines + 1] = line
     end
     return lines
