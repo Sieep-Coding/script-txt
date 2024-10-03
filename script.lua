@@ -1,6 +1,6 @@
 local input = 'accessions.txt'
 local output = 'accessions.csv'
-local csv = require("csv")
+-- local csv = require("csv")
 
 local file = io.open(input, "rb")
 if not file then
@@ -10,7 +10,7 @@ end
 if file then
     print("Accepted txt")
     local lines = {}
-    for line in lines:gmatch('"') do
+    for line in lines:gsub() do
         lines[#lines + 1] = line
     end
     return lines
