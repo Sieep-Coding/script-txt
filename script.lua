@@ -1,7 +1,7 @@
 local input = 'accessions.txt'
 local output = 'accessions.csv'
-
 local csv = require("csv")
+
 local file = io.open(input, "rb")
 if not file then
     error("Not the correct input file")
