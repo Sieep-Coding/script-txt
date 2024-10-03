@@ -5,6 +5,7 @@ local csv = require("csv")
 local file = io.open(input, "rb")
 if not file then
     error("Not the correct input file")
+    return nil
 end
 if file then
     print("Accepted txt")
